@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Drawing Board</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBHpqto6gSI5RlvufwrDPtIP8Q70bal7ks",
+    authDomain: "canvas-painting-9ff44.firebaseapp.com",
+    databaseURL: "https://canvas-painting-9ff44.firebaseio.com",
+    projectId: "canvas-painting-9ff44",
+    storageBucket: "canvas-painting-9ff44.appspot.com",
+    messagingSenderId: "595057974327",
+    appId: "1:595057974327:web:98672229421296d3ba33b2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+        <div id ="canvascontainer"></div>
+        <script src="sketch.js"></script>
+
+        <p>
+            <button id = "saveButton">Publish Design</button>
+            <button id = "clearButton">Clear Design</button>
+            <button id = "yellowButton">Yellow</button>
+            <button id = "redButton">Red</button>
+            <button id = "greenButton">Green</button>
+            <button id = "blueButton">Blue</button>
+            <button id = "purpleButton">purple</button>
+            <button id = "violetButton">violet</button>
+            <button id = "canvasWhiteButton">White</button>
+            <button id = "canvasBlackButton">Black</button>
+        </p>
+
+        <p>
+            <ol id = "drawinglist">
+
+            </ol>
+  
+</body>
+
+</html>
